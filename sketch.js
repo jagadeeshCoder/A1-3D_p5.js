@@ -20,7 +20,6 @@ function draw() {
 
   push();
   translate(-100, -100);
-  texture(img);
   rotateX(- PI / 1.5);
   noStroke() 
   debugMode(GRID, 100000, 1000, 0, 80, 0);
