@@ -17,6 +17,7 @@ function draw() {
   background(220);
 
   game_camer()
+  joystick()
 
   push();
   translate(-100, -100);
@@ -89,4 +90,32 @@ function game_camer(){
   cam.setPosition(190 + x,y - 5, mouseX-mouseY, 500,100);
                 //400,1,0,500}
   pop()
+}
+
+function joystick(){
+  button = createButton('left');
+  button.position(30, 350);
+  button.size(100,50);
+  button.mousePressed(left);
+  
+  button1 = createButton('right');
+  button1.position(230, 350);
+  button1.size(100,50);
+  button1.mousePressed(right);
+  
+  button2 = createButton('back');
+  button2.position(130, 400);
+  button2.size(100,50);
+  button2.mousePressed(back);
+  
+  button3 = createButton('frent');
+  button3.position(130, 298);
+  button3.size(100,50);
+  button3.mousePressed(frent);
+  
+  button4 = createButton('jump');
+  button4.position(800, 400);
+  button4.size(100,50);
+  button4.mousePressed(jump);
+
 }
